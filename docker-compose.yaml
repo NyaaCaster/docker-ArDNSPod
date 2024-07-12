@@ -1,0 +1,6 @@
+services:
+  ArDNSPod:
+    image: ardnspod
+    volumes:
+    - ./config:/ArDNSPod
+    restart: always
