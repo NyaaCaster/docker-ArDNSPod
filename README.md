@@ -2,25 +2,25 @@
 
 基于DNSPod用户API实现的纯Shell动态域名客户端，适配网卡地址。
 
-# Usage
+# Usage   使用
 
 复制`dns.conf.example`到同一目录下的`dns.conf`并根据你的配置修改即可。
 
 执行时直接运行`ddnspod.sh`，支持cron任务。
 
 配置文件格式：
-```
+```   ' ' '
 # 安全起见，不推荐使用密码认证
-# arMail="test@gmail.com"# arMail=“test@gmail.com”# arMail=“test@gmail.com”
-# arPass="123"   # arPass =“123个”   # arPass =“123个”
+# arMail="test@gmail.com"# arMail=“test@gmail.com”
+# arPass="123"   # arPass =“123个”
 
 # 推荐使用Token认证
 # 按`TokenID,Token`格式填写
-arToken="12345,7676f344eaeaea9074c123451234512d"arToken =“12345,7676f344eaeaea9074c123451234512d”arToken =“12345,7676f344eaeaea9074c123451234512d”
+arToken="12345,7676f344eaeaea9074c123451234512d"arToken =“12345,7676f344eaeaea9074c123451234512d”
 
 # 每行一个域名
-arDdnsCheck "test.org" "subdomain"arDdnsCheck “test.org”“子域”arDdnsCheck “test.org”“子域”
-```
+arDdnsCheck "test.org" "subdomain"arDdnsCheck “test.org”“子域”
+```   ' ' '' ' ' ' ' '
 
 # 最近更新
 
@@ -39,8 +39,8 @@ arDdnsCheck "test.org" "subdomain"arDdnsCheck “test.org”“子域”arDdnsCh
 - 进一步POSIX化，支持Mac和大部分Linux发行版
 - 更改配置文件格式
 
-# Credit
+# Credit   #信贷
 
-Original: anrip
+Original: anrip   原作者： anrip
 
-This version maintained by ProfFan
+This version maintained by ProfFan此版本由范教授维护。
