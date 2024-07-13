@@ -1,7 +1,7 @@
 services:
-  ArDNSPod:
-    image: ardnspod
+   ArDNSPod:
+    image: nyaacaster/ardnspod
     container_name: ArDNSPod
     volumes:
-    - ./config:/ArDNSPod
-    restart: always
+      - ./ArDNSPod:/ArDNSPod
+    restart: unless-stopped
