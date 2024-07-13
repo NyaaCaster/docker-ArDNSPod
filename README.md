@@ -2,20 +2,25 @@
 
 基于DNSPod用户API实现的纯Shell动态域名客户端，适配网卡地址。
 
-# Usage   使用
+# Usage
 
 复制`dns.conf.example`到同一目录下的`dns.conf`并根据你的配置修改即可。
 
 执行时直接运行`ddnspod.sh`，支持cron任务。
 
 配置文件格式：
-```   ' ' '
+```
+# 安全起见，不推荐使用密码认证
+# arMail="test@gmail.com"
+# arPass="123"
+
+# 推荐使用Token认证
 # 按`TokenID,Token`格式填写
-arToken="12345,7676f344eaeaea9074c123451234512d"arToken =“12345,7676f344eaeaea9074c123451234512d”
+arToken="12345,7676f344eaeaea9074c123451234512d"
 
 # 每行一个域名
-arDdnsCheck "test.org" "subdomain"arDdnsCheck “test.org”“子域”
-```   ' ' '' ' ' ' ' '
+arDdnsCheck "test.org" "subdomain"
+```
 
 # 最近更新
 
@@ -34,8 +39,15 @@ arDdnsCheck "test.org" "subdomain"arDdnsCheck “test.org”“子域”
 - 进一步POSIX化，支持Mac和大部分Linux发行版
 - 更改配置文件格式
 
-# Credit   #信贷
+# Credit
 
-Original: anrip   原作者： anrip
+Original: anrip Forked form anrip/ArDNSPod
 
-This version maintained by ProfFan此版本由范教授维护。
+# Support
+- Generate DNSPOD token : Go to "https://console.dnspod.cn/account/token/toke"n - 账号中心 - API密钥 - DNSPOD Token
+- Config dnspod.conf, subdomain configuration:
+-- "*" : 直接解析主域名 domain.org
+-- "@" : 泛解析，匹配其他所有域名
+- Run Docker Image : 
+- The follow Task : docker start ardnspod
+- Check container logs : docker logs ardnspod
