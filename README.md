@@ -2,25 +2,25 @@
 
 基于DNSPod用户API实现的纯Shell动态域名客户端，适配网卡地址。
 
-# Usage
+# Usage   #使用   使用
 
 复制`dns.conf.example`到同一目录下的`dns.conf`并根据你的配置修改即可。
 
 执行时直接运行`ddnspod.sh`，支持cron任务。
 
 配置文件格式：
-```
+```   ' ' '   ' ' '   ' ' '
 # 安全起见，不推荐使用密码认证
-# arMail="test@gmail.com"
-# arPass="123"
+# arMail="test@gmail.com"# arMail=“test@gmail.com”# arMail=“test@gmail.com”arMail=“test@gmail.com”arMail=“test@gmail.com”arMail=“test@gmail.com”
+# arPass="123"   # arPass =“123个”   # arPass =“123个”# arPass =“123个”# arPass =“123首个“# arPass =“123个个”
 
 # 推荐使用Token认证
 # 按`TokenID,Token`格式填写
-arToken="12345,7676f344eaeaea9074c123451234512d"
+arToken="12345,7676f344eaeaea9074c123451234512d"arToken =“12345,7676f344eaeaea9074c123451234512d”arToken =“12345,7676f344eaeaea9074c123451234512d”arToken =“12345,7676f344eaeaea9074c123451234512d”arToken =“12345,7676f344eaeaea9074c123451234512d”arToken =“12345,7676f344eaeaea9074c123451234512d”
 
 # 每行一个域名
-arDdnsCheck "test.org" "subdomain"
-```
+arDdnsCheck "test.org" "subdomain"arDdnsCheck “test.org”“子域”arDdnsCheck “test.org”“子域”
+```   ' ' '' ' ' ' ' '
 
 # 最近更新
 
