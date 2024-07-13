@@ -10,11 +10,6 @@
 
 配置文件格式：
 ```   ' ' '
-# 安全起见，不推荐使用密码认证
-# arMail="test@gmail.com"# arMail=“test@gmail.com”
-# arPass="123"   # arPass =“123个”
-
-# 推荐使用Token认证
 # 按`TokenID,Token`格式填写
 arToken="12345,7676f344eaeaea9074c123451234512d"arToken =“12345,7676f344eaeaea9074c123451234512d”
 
