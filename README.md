@@ -46,8 +46,8 @@ Original: anrip Forked form anrip/ArDNSPod
 # Support
 - Generate DNSPOD token : Go to "https://console.dnspod.cn/account/token/toke"n - 账号中心 - API密钥 - DNSPOD Token
 - Config dnspod.conf, subdomain configuration:
--- "*" : 直接解析主域名 domain.org
--- "@" : 泛解析，匹配其他所有域名
+ - "*" : 直接解析主域名 domain.org
+ - "@" : 泛解析，匹配其他所有域名
 - Run Docker Image : 
 - The follow Task : docker start ardnspod
 - Check container logs : docker logs ardnspod
