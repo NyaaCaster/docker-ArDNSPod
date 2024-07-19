@@ -1,4 +1,5 @@
-FROM alpine:3.14
+# FROM alpine
+FROM ubuntu
 WORKDIR /ArDNSPod
-ADD ./ArDNSPod* /ArDNSPod/
-CMD /ArDNSPod/ddnspod.sh
+CMD apk update && apk install wget && bash ddnspod.sh
+# CMD ["/bin/sh","/ArDNSPod/ddnspod.sh"]
